@@ -18,6 +18,47 @@ export default function LandingBanner() {
           className="object-contain"
         /> */}
       </div>
+      <div className="logo-section w-full h-full relative">
+  {/* MOBILE & TABLET: grid layout */}
+  <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 p-4 md:hidden">
+    <img src="/assets/lansco.png" className="w-20 mx-auto animate-float" />
+    <img src="/assets/high plast.png" className="w-20 mx-auto animate-float" />
+    <img src="/assets/subway.png" className="w-24 mx-auto animate-float" />
+    <img src="/assets/logiTrans.png" className="w-20 mx-auto animate-float" />
+    <img src="/assets/mraqiya.png" className="w-20 mx-auto animate-float" />
+    <img src="/assets/semah.png" className="w-20 mx-auto animate-float" />
+    <img src="/assets/alrowad.png" className="w-20 mx-auto animate-float" />
+    <img src="/assets/bci.png" className="w-20 mx-auto animate-float" />
+    <img src="/assets/permeshwar.png" className="w-20 mx-auto animate-float" />
+    <img src="/assets/jameel.png" className="w-20 mx-auto animate-float" />
+    <img src="/assets/ghim.png" className="w-20 mx-auto animate-float" />
+    <img src="/assets/rsn.png" className="w-20 mx-auto animate-float" />
+    <img src="/assets/formula arabia.png" className="w-20 mx-auto animate-float" />
+    <img src="/assets/aquamaris.png" className="w-20 mx-auto animate-float" />
+    <img src="/assets/AIBG.png" className="w-20 mx-auto animate-float" />
+  </div>
+
+  {/* DESKTOP: positioned absolutely */}
+  <div className="hidden md:block">
+    <img src="/assets/lansco.png" className="absolute top-[25%] left-[2%] w-24 animate-float" />
+    <img src="/assets/high plast.png" className="absolute top-[5%] left-[18%] w-24 animate-float" />
+    <img src="/assets/subway.png" className="absolute top-[5%] left-[33%] w-34 animate-float" />
+    <img src="/assets/logiTrans.png" className="absolute top-[5%] left-[51%] w-24 animate-float" />
+    <img src="/assets/mraqiya.png" className="absolute top-[5%] left-[66%] w-24 animate-float" />
+    <img src="/assets/semah.png" className="absolute top-[8%] left-[85%] w-24 animate-float" />
+    <img src="/assets/alrowad.png" className="absolute top-[25%] left-[92%] w-24 animate-float" />
+
+    <img src="/assets/bci.png" className="absolute top-[45%] left-[5%] w-24 animate-float" />
+    <img src="/assets/permeshwar.png" className="absolute top-[65%] left-[5%] w-24 animate-float" />
+    <img src="/assets/jameel.png" className="absolute top-[75%] left-[20%] w-24 animate-float" />
+    <img src="/assets/ghim.png" className="absolute top-[75%] left-[35%] w-24 animate-float" />
+    <img src="/assets/rsn.png" className="absolute top-[75%] left-[50%] w-24 animate-float" />
+    <img src="/assets/formula arabia.png" className="absolute top-[75%] left-[65%] w-24 animate-float" />
+    <img src="/assets/aquamaris.png" className="absolute top-[75%] left-[80%] w-24 animate-float" />
+    <img src="/assets/AIBG.png" className="absolute top-[50%] left-[90%] w-24 animate-float" />
+  </div>
+</div>
+
 
       <div className="absolute flex flex-col items-center gap-6 z-10">
         <p
@@ -30,8 +71,7 @@ export default function LandingBanner() {
             fontWeight: "400",
             lineHeight: "0.5",
             fontFamily: "'Bebas Neue', sans-serif",
-            transform: "scaleX(1)",
-            transformOrigin: "center",
+          
           }}
         >
           <span style={{ color: "#FF5900" }}>OPTIMIZE</span>
