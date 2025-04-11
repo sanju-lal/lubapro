@@ -26,11 +26,11 @@ export default function LandingBanner() {
           data-aos-anchor-placement="center-bottom"
           className="px-5 md:px-0 text-center font-bold max-w-[900px]"
           style={{
-            fontSize: "72px",
-            fontWeight: "600",
-            lineHeight: "1",
+            fontSize: "140px",
+            fontWeight: "400",
+            lineHeight: "0.5",
             fontFamily: "'Bebas Neue', sans-serif",
-            transform: "scaleY(1.2)",
+            transform: "scaleX(1)",
             transformOrigin: "center",
           }}
         >
