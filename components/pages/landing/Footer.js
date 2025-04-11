@@ -99,12 +99,12 @@ export default function Footer() {
         style={{ color: "#FF5900" }}
       >
         <div className="flex justify-center">
-          <div className="w-full max-w-[1300px] flex flex-col md:flex-row justify-center md:border-b md:border-b-[#E4E4E742]"></div>
+          <div className="w-full flex flex-col md:flex-row justify-center md:border-b md:border-b-[#E4E4E742]"></div>
         </div>
 
         <div className="md:px-5 pt-6 md:pt-14 ">
           <div className="w-full flex justify-center ">
-            <div className="relative max-w-[1300px] w-full pb-6 md:pb-14  flex flex-wrap border-b border-b-[#E4E4E742]">
+            <div className="relative w-full pb-6 md:pb-14  flex flex-wrap border-b border-b-[#E4E4E742]">
               <div className="flex flex-col gap-4 w-full md:w-[35%] pb-6 md:pb-0">
                 <Link href="/" passHref>
                   <img

@@ -61,16 +61,16 @@ export default function HeaderV3() {
   const handleCloseMobileMenu = () => setMobileMenu(false);
 
   return (
-    <nav className="w-full h-[74px] bg-white border-b-[1px] border-[#838383] flex justify-center items-center mb-6">
-      <div className="w-full flex justify-between items-center relative px-4">
+    <nav className="w-full h-[74px] bg-white border-b-[1px] border-[#838383] flex justify-center items-center mb-6 px-6">
+      <div className="w-full flex justify-between items-center relative px-8">
         {/* Logo */}
         <div className="flex items-center">
           <Link href="/">
             <Image
               src={Logo}
               alt="Logo"
-              width={30}
-              height={100}
+              width={80}
+              height={98}
               className="cursor-pointer"
             />
           </Link>
