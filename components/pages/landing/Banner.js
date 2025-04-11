@@ -10,13 +10,13 @@ export default function LandingBanner() {
       }}
     >
       <div className="absolute top-6 left-6 z-20">
-        <Image
+        {/* <Image
           src="assets/logo2.svg"
           alt="Logo"
           width={100}
           height={40}
           className="object-contain"
-        />
+        /> */}
       </div>
 
       <div className="absolute flex flex-col items-center gap-6 z-10">
