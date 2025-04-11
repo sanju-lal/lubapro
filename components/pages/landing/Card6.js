@@ -11,7 +11,7 @@ const Card6 = ({ item }) => {
           data-aos="fade-up"
           data-aos-duration="500"
         >
-          <h1 className="font-bold text-black leading-snug whitespace-nowrap text-[clamp(1.5rem,4vw,3.75rem)]">
+          <h1 className="text-4xl md:text-6xl font-bold text-black leading-snug whitespace-nowrap text-[clamp(1.5rem,4vw,3.75rem)]">
             <span>{item?.titleBefore}&nbsp;</span>
             <span className="text-[#FF5900]">{item?.highlight}</span>
             <span>&nbsp;{item?.titleAfter}</span>
