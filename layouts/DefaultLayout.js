@@ -4,6 +4,7 @@ import React from "react";
 // import { IoCloseCircleOutline } from "react-icons/io5";
 
 import Footer from "../components/pages/landing/Footer";
+import HeaderV3 from "../components/common/Header";
 
 // import PosterModal from "../components/common/PosterModal";
 
@@ -34,6 +35,9 @@ export default function DefaultLayout({ children }) {
   };
   return (
     <div className="relative min-h-screen w-full flex flex-col">
+      <div className="sticky top-[8px] md:top-5 z-50 header-pos sticky-header ">
+        <HeaderV3 />
+      </div>
       <div className="flex-grow p-2 md:px-5 md:py-5">{children}</div>
       <div className="mt-auto px-2 md:px-5">
         <Footer />
