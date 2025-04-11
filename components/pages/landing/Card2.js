@@ -2,54 +2,28 @@ import React from "react";
 import Button from "../../common/Button";
 
 const Card2 = ({ item, buttonText = "Learn More" }) => {
-  const highlightWord = "Solutions";
-  const parts = item?.title?.split(new RegExp(`(${highlightWord})`, "i"));
-
   return (
-    <div className="flex justify-center items-center min-h-screen px-4">
-      <div className="bg-[#fff] my-2 md:my-5 rounded-[20px] p-6 md:p-10 w-full max-w-[880px]">
-        <div className="flex flex-col gap-6 text-black">
-          {/* Title */}
-          {item?.title && (
-            <h2
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-anchor-placement="center-bottom"
-              className="text-[90px] font-bold leading-[110px] text-center w-full"
-            >
-              {parts.map((part, index) =>
-                part.toLowerCase() === highlightWord.toLowerCase() ? (
-                  <span key={index} className="text-[#FF5900]">
-                    {part}
-                  </span>
-                ) : (
-                  part
-                )
-              )}
-            </h2>
-          )}
+    <div
+      data-aos="fade-up"
+      data-aos-duration="500"
+      className="px-4 py-10 md:py-20 bg-white"
+    >
+      {/* Title and Paragraph */}
+      <div className="w-full text-left mb-6">
+        <h2 className="text-[clamp(1.8rem,5vw,3.5rem)] font-extrabold text-black leading-tight mb-4">
+          {item.titleBefore}
+          <span className="text-[#FF5900]"> {item.highlight}</span>
+          <span> {item.titleAfter}</span>
+        </h2>
 
-          {/* Paragraph */}
-          {item?.para?.[0] && (
-            <p
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              data-aos-anchor-placement="center-bottom"
-              className="text-lg leading-[28px] font-medium text-[#5A5A5A]"
-            >
-              {item.para[0]}
-            </p>
-          )}
+        <p className="text-[clamp(1rem,2vw,1.2rem)] text-gray-500 leading-relaxed">
+          {item.para}
+        </p>
+      </div>
 
-          {/* Custom Button - Left aligned */}
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1800"
-            className="mt-2 w-fit"
-          >
-            <Button title={buttonText} />
-          </div>
-        </div>
+      {/* Button */}
+      <div data-aos="fade-up" data-aos-duration="500" className="w-fit">
+        <Button title={buttonText} />
       </div>
     </div>
   );
