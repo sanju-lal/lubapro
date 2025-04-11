@@ -10,7 +10,7 @@ const Card2 = ({ item, buttonText = "Learn More" }) => {
     >
       {/* Title and Paragraph */}
       <div className="w-full text-left mb-6">
-        <h2 className="text-[clamp(1.8rem,5vw,3.5rem)] font-extrabold text-black leading-tight mb-4">
+        <h2 className="text-[clamp(1.8rem,5vw,3.5rem)] text-4xl md:text-6xl font-bold text-black leading-tight mb-4">
           {item.titleBefore}
           <span className="text-[#FF5900]"> {item.highlight}</span>
           <span> {item.titleAfter}</span>

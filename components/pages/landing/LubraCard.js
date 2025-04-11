@@ -3,15 +3,15 @@ import React from "react";
 const LubraCard = ({ item }) => {
   return (
     <div className="w-full p-5 rounded-[20px] mt-2 md:mt-5 bg-[#FF5900]">
-      <div className="w-full max-w-[1300px] mx-auto">
+      <div className="w-full mx-auto">
         {/* 🧠 Heading on top-left */}
-        <h2 className="text-2xl md:text-3xl font-semibold text-white mb-6">
+        <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
           {item?.title || "Our Brand"}
         </h2>
 
         <div className="flex flex-col xl:flex-row justify-between items-center">
           {/* Logo section */}
-          <div className="w-full xl:w-[45%] flex justify-center xl:justify-start mb-8 xl:mb-0">
+          <div className="w-full xl:w-[45%] flex justify-center xl:justify-start mb-8 xl:mb-0 xl:ml-10 mt-2">
             <img
               data-aos="fade-up"
               data-aos-duration="500"

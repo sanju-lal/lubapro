@@ -7,7 +7,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 const Card5 = ({ item }) => {
   return (
     <div className="bg-white py-16 px-4 md:px-10">
-      <h2 className="text-3xl md:text-5xl font-extrabold mb-12 ml-[57px] text-black">
+      <h2 className="text-4xl md:text-6xl font-bold mb-12 text-black">
         TAILORED FOR YOUR <span className="text-[#FF5900]">SECTOR</span>
       </h2>
 
