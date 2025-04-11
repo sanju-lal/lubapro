@@ -6,6 +6,7 @@ import VideoCard from "../components/pages/landing/VideoCard";
 import Card2 from "../components/pages/landing/Card2";
 import Card6 from "../components/pages/landing/Card6";
 import Card5 from "../components/pages/landing/Card5";
+import Header from "../components/common/Header";
 
 const card = {
   titleBefore: "EXPLORE THE KEY FEATURES OF OUR",
