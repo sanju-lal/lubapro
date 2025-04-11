@@ -20,6 +20,7 @@ const Card1 = ({ item }) => {
           </div>
 
           {/* Paragraph section */}
+          {/* Paragraph section */}
           <div
             data-aos="fade-up"
             data-aos-duration="500"
