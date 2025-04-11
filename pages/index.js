@@ -4,6 +4,8 @@ import Card1 from "../components/pages/landing/Card1";
 import LubraCard from "../components/pages/landing/LubraCard";
 import VideoCard from "../components/pages/landing/VideoCard";
 import Card2 from "../components/pages/landing/Card2";
+import Card6 from "../components/pages/landing/Card6";
+import Card5 from "../components/pages/landing/Card5";
 
 const card = {
   titleBefore: "EXPLORE THE KEY FEATURES OF OUR",
@@ -30,6 +32,44 @@ const card2 = {
   ],
 };
 
+const card5 = [
+  {
+    title: "Real Estate",
+    para: "Optimize property, assets, and finances with our real estate ERP. Simplify leasing and boost tenant satisfaction.",
+    img: "/assets/slider_img1.jpg",
+  },
+  {
+    title: "Manufacturing",
+    para: "Enhance production, inventory, and supply chain management with our manufacturing ERP.",
+    img: "/assets/slider_img2.png",
+  },
+  {
+    title: "Retail Gas Stations",
+    para: "Optimize fuel management, sales, and inventory with our retail gas station ERP.",
+    img: "/assets/slider_img3.jpg",
+  },
+  {
+    title: "Transport",
+    para: "Improve fleet management, logistics, and operations with our transport ERP.",
+    img: "/assets/slider_img4.png",
+  },
+  {
+    title: "Real Estate",
+    para: "Optimize property, assets, and finances with our real estate ERP. Simplify leasing and boost tenant satisfaction.",
+    img: "/assets/slider_img1.jpg",
+  },
+];
+
+const card6 = {
+  titleBefore: "THE",
+  highlight: "MINDS",
+  titleAfter: "BEHIND LUBAPRO",
+  img: "/assets/person_1.png",
+  para: [
+    "Lubapro is powered by a dedicated team of ERP experts, developers, and industry professionals. With experience across key sectors, we build flexible, effective solutions that simplify operations and drive business growth.",
+  ],
+};
+
 const IndexPage = () => {
   return (
     <div>
@@ -38,6 +78,8 @@ const IndexPage = () => {
       <Card1 item={card} />
       <LubraCard item={lubraDecs} />
       <VideoCard />
+      <Card5 item={card5} />
+      <Card6 item={card6} />
     </div>
   );
 };
