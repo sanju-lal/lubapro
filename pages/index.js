@@ -26,7 +26,9 @@ const lubraDecs = {
 };
 
 const card2 = {
-  title: "CUSTOM ERP SOLUTIONS FOR YOUR INDUSTRY",
+  titleBefore: "CUSTOM ERP",
+  highlight: "SOLUTIONS",
+  titleAfter: "FOR YOUR INDUSTRY",
   para: [
     "LubaPro offers customizable ERP solutions tailored for restaurant chains, manufacturing, services, and healthcare. Experience a clean, intuitive design with enterprise-grade features, offering a flexible alternative to SAP. Get a solution designed for your unique needs.",
   ],
