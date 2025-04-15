@@ -1,6 +1,7 @@
 import React from "react";
 
 import Products1 from "../../../components/pages/landing/Products1";
+import WhyChooseLubapro from "../../../components/pages/landing/WhyChooseLubapro";
 import Cards from "../../../components/pages/landing/Cards";
 
 const cardData = [
@@ -44,6 +45,8 @@ const card = {
 const IndexPage = () => {
   return (
     <div>
+      <Products1 item={card2} />
+      <WhyChooseLubapro/>
       <Products1 item={card} />
       <Cards items={cardData} />
     </div>
