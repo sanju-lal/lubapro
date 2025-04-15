@@ -77,7 +77,6 @@ const IndexPage = () => {
   return (
     <div>
       <Banner />
-
       <Card2 item={card2} />
       <VideoCard />
       <Card1 item={card} />
