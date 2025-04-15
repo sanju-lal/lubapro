@@ -95,7 +95,7 @@ export default function Footer() {
   return (
     <section id="contact-us">
       <div
-        className="w-full mb-5 md:mt-3 bg-[#F2F2F2] rounded-[20px] p-5 "
+        className="w-full mb-5 md:mt-3 bg-white rounded-[20px] p-5 "
         style={{ color: "#FF5900" }}
       >
         <div className="flex justify-center">
