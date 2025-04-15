@@ -251,7 +251,7 @@ const Enquiry = () => {
               <div className="flex pb-4 lg:pb-0">
                 <span>
                   <input
-                    className="w-4 h-4 rounded-[2px] border border-[#262626] checked:bg-white bg-[#1a1a1a] appearance-none cursor-pointer"
+                    className="w-4 h-4 rounded-[2px] border border-[#262626] checked:bg-[#f2f2f2] bg-[#1a1a1a] appearance-none cursor-pointer"
                     type="checkbox"
                     onChange={handleAgree}
                   />

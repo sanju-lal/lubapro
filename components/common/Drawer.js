@@ -26,7 +26,7 @@ export default function Drawer({ children, isOpen, setIsOpen }) {
         >
           {/* Drawer Content */}
           <section
-            className={`absolute right-0 z-50 top-0 h-full max-w-md w-full bg-white shadow-xl transition-all duration-500 ease-in-out transform ${
+            className={`absolute right-0 z-50 top-0 h-full max-w-md w-full bg-[#f2f2f2] shadow-xl transition-all duration-500 ease-in-out transform ${
               isOpen ? "translate-x-0" : "translate-x-full"
             }`}
           >

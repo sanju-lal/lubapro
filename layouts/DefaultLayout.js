@@ -1,44 +1,51 @@
-import React from "react";
-
-// import { Modal } from "antd";
-// import { IoCloseCircleOutline } from "react-icons/io5";
-
+import React, { useEffect, useState } from "react";
 import Footer from "../components/pages/landing/Footer";
 import HeaderV3 from "../components/common/Header";
 
-// import PosterModal from "../components/common/PosterModal";
-
 export default function DefaultLayout({ children }) {
-  // const [isModalVisible, setIsModalVisible] = useState(false);
+  const [showHeader, setShowHeader] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
-  // useEffect(() => {
-  //   const hasSeenModal = localStorage.getItem("hasSeenModal");
-  //   if (!hasSeenModal) {
-  //     const timer = setTimeout(() => {
-  //       setIsModalVisible(true);
-  //     }, 1000);
+  // Scroll listener
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
 
-  //     return () => clearTimeout(timer);
-  //   }
-  // }, []);
+      if (currentScrollY > lastScrollY && currentScrollY > 50) {
+        // Scrolling down
+        setShowHeader(false);
+      } else {
+        // Scrolling up
+        setShowHeader(true);
+      }
 
-  // const handleCloseModal = () => {
-  //   localStorage.setItem("hasSeenModal", "true");
-  //   setIsModalVisible(false);
-  // };
+      setLastScrollY(currentScrollY);
+    };
 
-  const scrollToTop = (behavior = "smooth") => {
-    window.scrollTo({
-      top: 0,
-      behavior,
-    });
-  };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
     <div className="relative min-h-screen w-full flex flex-col">
-      <div className="sticky top-[8px] md:top-5 z-50 header-pos sticky-header ">
+      {/* Header */}
+      <div
+        className={`fixed top-[8px] md:top-5 left-0 w-full z-50 transition-transform duration-300 ${
+          showHeader ? "translate-y-0" : "-translate-y-full"
+        }`}
+      >
         <HeaderV3 />
       </div>
-      <div className="flex-grow p-2 md:px-5 md:py-5">{children}</div>
+
+      {/* Main Content */}
+      <div className="flex-grow pt-[72px] md:pt-[88px] px-2 md:px-5">
+        {children}
+      </div>
+
+      {/* Footer */}
       <div className="mt-auto px-2 md:px-5">
         <Footer />
       </div>

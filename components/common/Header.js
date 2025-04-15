@@ -15,7 +15,20 @@ export default function HeaderV3() {
     { title: "Home", linkTo: "/#home", activeLink: "/#home" },
     {
       title: "Products",
-      linkTo: "",
+      linkTo: "/products",
+      activeLink: "/products",
+      subMenu: [
+        {
+          title: "Manufacturing management",
+          linkTo: "products/manufacturing-management",
+        },
+        { title: "Retail management", linkTo: "" },
+        { title: "Transport management", linkTo: "" },
+      ],
+    },
+    {
+      title: "Solutions",
+      linkTo: "/solutions",
       activeLink: "",
       subMenu: [
         { title: "By Industry", linkTo: "" },
@@ -28,7 +41,6 @@ export default function HeaderV3() {
         { title: "Other Industries", linkTo: "" },
       ],
     },
-    { title: "Solutions", linkTo: "", activeLink: "" },
     { title: "Customer Stories", linkTo: "/", activeLink: "" },
     {
       title: "Services",
@@ -61,7 +73,7 @@ export default function HeaderV3() {
   const handleCloseMobileMenu = () => setMobileMenu(false);
 
   return (
-    <nav className="w-full h-[74px] bg-white border-b-[1px] border-[#838383] flex justify-center items-center mb-6 px-6">
+    <nav className="w-full h-[74px] bg-[#F2F2F2] border-b-[1px] border-[#838383] flex justify-center items-center mb-6 px-6">
       <div className="w-full flex justify-between items-center relative px-8">
         {/* Logo */}
         <div className="flex items-center">
@@ -76,7 +88,7 @@ export default function HeaderV3() {
           </Link>
         </div>
 
-        {/* Desktop Navigation - Centered */}
+        {/* Desktop Navigation */}
         <div className="hidden xl:flex absolute left-1/2 transform -translate-x-1/2">
           <ul className="flex items-center gap-4 whitespace-nowrap">
             {navList.map((item, i) => (
@@ -123,12 +135,19 @@ function NavItem({ item, handleCloseMobileMenu }) {
         <>
           {/* Mobile Submenu */}
           <div className="xl:hidden">
-            <button
-              onClick={() => setPopoverVisible(!popoverVisible)}
+            <span
+              onClick={() => {
+                if (item.linkTo) {
+                  router.push(item.linkTo);
+                  handleCloseMobileMenu && handleCloseMobileMenu();
+                } else {
+                  setPopoverVisible(!popoverVisible);
+                }
+              }}
               className="p-3 text-[#838383] cursor-pointer hover:font-bold hover:text-orange-primary"
             >
               {item?.title}
-            </button>
+            </span>
             <ul className="ml-4 mt-2 flex flex-col gap-2">
               {isGroupedMenu
                 ? item.subMenu.map((group, i) => (
@@ -216,17 +235,19 @@ function NavItem({ item, handleCloseMobileMenu }) {
               visible={popoverVisible}
               onVisibleChange={(visible) => setPopoverVisible(visible)}
             >
-              <button onClick={() => setPopoverVisible(!popoverVisible)}>
-                <span
-                  className={`p-3 text-[#838383] cursor-pointer hover:font-bold hover:text-orange-primary${
-                    router.pathname === item.activeLink
-                      ? " font-bold text-orange-primary"
-                      : ""
-                  }`}
-                >
-                  {item.title}
-                </span>
-              </button>
+              <div className="relative">
+                <Link href={item.linkTo}>
+                  <span
+                    className={`p-3 text-[#838383] cursor-pointer hover:font-bold hover:text-orange-primary${
+                      router.pathname === item.activeLink
+                        ? " font-bold text-orange-primary"
+                        : ""
+                    }`}
+                  >
+                    {item.title}
+                  </span>
+                </Link>
+              </div>
             </Popover>
           </div>
         </>
