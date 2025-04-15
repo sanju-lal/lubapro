@@ -7,6 +7,7 @@ import Card2 from "../components/pages/landing/Card2";
 import Card6 from "../components/pages/landing/Card6";
 import Card5 from "../components/pages/landing/Card5";
 import IndustryInsights from "../components/pages/landing/IndustryInsights";
+import Client from "../components/pages/landing/Client";
 
 const card = {
   titleBefore: "EXPLORE THE KEY FEATURES OF OUR",
@@ -77,13 +78,14 @@ const IndexPage = () => {
   return (
     <div>
       <Banner />
+      <Client />
       <Card2 item={card2} />
+      <VideoCard />
       <Card1 item={card} />
       <LubraCard item={lubraDecs} />
-      <VideoCard />
       <Card5 item={card5} />
       <Card6 item={card6} />
-      <IndustryInsights/>
+      <IndustryInsights />
     </div>
   );
 };
