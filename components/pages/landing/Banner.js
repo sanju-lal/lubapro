@@ -4,7 +4,7 @@ import Image from "next/image"; // If you're using next/image
 export default function LandingBanner() {
   return (
     <div
-      className="relative rounded-[20px] -mt-[19px] flex justify-center items-center w-full bg-white"
+      className="relative rounded-[20px] -mt-[19px] flex justify-center items-center w-full bg-[#f2f2f2]"
       style={{
         height: "calc(97vh - 16px)",
       }}
