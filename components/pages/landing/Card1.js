@@ -2,7 +2,7 @@ import React from "react";
 
 const Card1 = ({ item }) => {
   return (
-    <div className="w-full p-5 rounded-[20px] mt-2 md:mt-5 bg-white">
+    <div className="w-full p-5 rounded-[20px] mt-2 md:mt-5 bg-[#f2f2f2]">
       <div className="w-full flex justify-center pt-8 xl:pb-20">
         <div className="w-full flex flex-col xl:flex-row justify-between items-center">
           {/* Title section without image */}

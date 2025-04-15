@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import "tailwindcss";
 @import "tailwindcss/utilities";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f;
+  --foreground: #f2f2f2;
 }
 
 @theme inline {
@@ -15,15 +16,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ffff;
-    --foreground: #ededed;
+    --background: #f2f2f2;
+    --foreground: #f2f2f2;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Raleway, Helvetica, sans-serif;
+  font-family: "Raleway", Helvetica, sans-serif;
 }
 @keyframes float {
   0%, 100% {

@@ -6,7 +6,7 @@ const Card2 = ({ item, buttonText = "Learn More" }) => {
     <div
       data-aos="fade-up"
       data-aos-duration="500"
-      className="px-4 py-10 md:py-20 bg-white"
+      className="px-4 py-10 md:py-20 bg-[f2f2f2]"
     >
       {/* Title and Paragraph */}
       <div className="w-full text-left mb-6">

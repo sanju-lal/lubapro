@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Loader({ color = "bg-white" }) {
+export default function Loader({ color = "bg-[#f2f2f2]" }) {
   return (
     <div className="flex space-x-2 justify-center items-center h-full w-full dark:invert">
       <span className="font-light text-md">Loading...</span>

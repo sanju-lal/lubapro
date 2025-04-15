@@ -6,7 +6,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 
 const Card5 = ({ item }) => {
   return (
-    <div className="bg-white py-16 px-4 md:px-10">
+    <div className="bg-[#f2f2f2] py-16 px-4 md:px-10">
       <h2 className="text-4xl md:text-6xl font-bold mb-12 text-black">
         TAILORED FOR YOUR <span className="text-[#FF5900]">SECTOR</span>
       </h2>
@@ -26,7 +26,7 @@ const Card5 = ({ item }) => {
       >
         {item?.map((sector, index) => (
           <SwiperSlide key={index}>
-            <div className="flex flex-col items-center text-center bg-white p-4 ">
+            <div className="flex flex-col items-center text-center bg-[#f2f2f2] p-4 ">
               <img
                 src={sector.img}
                 alt={sector.title}

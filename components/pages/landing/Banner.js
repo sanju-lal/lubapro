@@ -20,46 +20,134 @@ export default function LandingBanner() {
       </div>
       <div className="logo-section w-full h-full relative ">
         {/* MOBILE & TABLET: grid layout */}
-        <div className="block sm:hidden" >
-          <img src="/assets/lansco.png" className="absolute top-[30%] left-[2%]  animate-float float-fast delay-0  responsive-logo" />
-          <img src="/assets/subway.png" className="absolute top-[29%] left-[33%] mx-auto animate-float float-fast delay-2 responsive-logo" />
-          <img src="/assets/mraqiya.png" className="absolute top-[29%] left-[66%]  animate-float float-fast delay-0 responsive-logo" />
-          <img src="/assets/jameel.png" className="absolute top-[65%] left-[20%] animate-float float-fast delay-4 responsive-logo" />
-          <img src="/assets/formula arabia.png" className="absolute top-[65%] left-[65%] animate-float float-fast delay-0 responsive-logo" />
-          <img src="/assets/high plast.png" className="absolute top-[15%] left-[18%]  animate-float float-fast delay-1 responsive-logo" />
-          <img src="/assets/logiTrans.png" className="absolute top-[15%] left-[51%]  animate-float float-fast delay-4 responsive-logo" /> 
-          <img src="/assets/semah.png" className="absolute top-[15%] left-[85%]  animate-float float-fast delay-4 responsive-logo" />
-          <img src="/assets/alrowad.png" className="absolute top-[35%] left-[92%]  animate-float float-fast delay-2 responsive-logo" /> 
-          <img src="/assets/bci.png" className="absolute top-[45%] left-[0%]  animate-float float-fast delay-1 responsive-logo" />
-          <img src="/assets/permeshwar.png" className="absolute top-[65%] left-[5%]  animate-float float-fast delay-0 responsive-logo" />
-          <img src="/assets/ghim.png" className="absolute top-[75%] left-[35%]  animate-float float-fast delay-2 responsive-logo" />
-          <img src="/assets/rsn.png" className="absolute top-[75%] left-[50%]  animate-float float-fast delay-1 responsive-logo" />
-          <img src="/assets/aquamaris.png" className="absolute top-[65%] left-[85%] animate-float float-fast delay-2 responsive-logo" />
-          <img src="/assets/AIBG.png" className="absolute top-[50%] left-[90%]  animate-float float-fast delay-4 responsive-logo" />
-
+        <div className="block sm:hidden">
+          <img
+            src="/assets/lansco.png"
+            className="absolute top-[30%] left-[2%]  animate-float float-fast delay-0  responsive-logo"
+          />
+          <img
+            src="/assets/subway.png"
+            className="absolute top-[29%] left-[33%] mx-auto animate-float float-fast delay-2 responsive-logo"
+          />
+          <img
+            src="/assets/mraqiya.png"
+            className="absolute top-[29%] left-[66%]  animate-float float-fast delay-0 responsive-logo"
+          />
+          <img
+            src="/assets/jameel.png"
+            className="absolute top-[65%] left-[20%] animate-float float-fast delay-4 responsive-logo"
+          />
+          <img
+            src="/assets/formula arabia.png"
+            className="absolute top-[65%] left-[65%] animate-float float-fast delay-0 responsive-logo"
+          />
+          <img
+            src="/assets/high plast.png"
+            className="absolute top-[15%] left-[18%]  animate-float float-fast delay-1 responsive-logo"
+          />
+          <img
+            src="/assets/logiTrans.png"
+            className="absolute top-[15%] left-[51%]  animate-float float-fast delay-4 responsive-logo"
+          />
+          <img
+            src="/assets/semah.png"
+            className="absolute top-[15%] left-[85%]  animate-float float-fast delay-4 responsive-logo"
+          />
+          <img
+            src="/assets/alrowad.png"
+            className="absolute top-[35%] left-[92%]  animate-float float-fast delay-2 responsive-logo"
+          />
+          <img
+            src="/assets/bci.png"
+            className="absolute top-[45%] left-[0%]  animate-float float-fast delay-1 responsive-logo"
+          />
+          <img
+            src="/assets/permeshwar.png"
+            className="absolute top-[65%] left-[5%]  animate-float float-fast delay-0 responsive-logo"
+          />
+          <img
+            src="/assets/ghim.png"
+            className="absolute top-[75%] left-[35%]  animate-float float-fast delay-2 responsive-logo"
+          />
+          <img
+            src="/assets/rsn.png"
+            className="absolute top-[75%] left-[50%]  animate-float float-fast delay-1 responsive-logo"
+          />
+          <img
+            src="/assets/aquamaris.png"
+            className="absolute top-[65%] left-[85%] animate-float float-fast delay-2 responsive-logo"
+          />
+          <img
+            src="/assets/AIBG.png"
+            className="absolute top-[50%] left-[90%]  animate-float float-fast delay-4 responsive-logo"
+          />
         </div>
 
         {/* DESKTOP: positioned absolutely */}
         <div className="hidden sm:block">
-          <img src="/assets/lansco.png" className="absolute top-[25%] left-[2%]  animate-float float-fast delay-0  responsive-logo" />
-          <img src="/assets/high plast.png" className="absolute top-[5%] left-[18%]  animate-float float-fast delay-1 responsive-logo" />
-          <img src="/assets/subway.png" className="absolute top-[5%] left-[33%] animate-float float-fast delay-2 responsive-logo" />
-          <img src="/assets/logiTrans.png" className="absolute top-[5%] left-[51%]  animate-float float-fast delay-4 responsive-logo" /> 
-          <img src="/assets/mraqiya.png" className="absolute top-[5%] left-[66%]  animate-float float-fast delay-0 responsive-logo" />
-          <img src="/assets/semah.png" className="absolute top-[8%] left-[85%]  animate-float float-fast delay-4 responsive-logo" />
-          <img src="/assets/alrowad.png" className="absolute top-[25%] left-[92%]  animate-float float-fast delay-2 responsive-logo" /> 
+          <img
+            src="/assets/lansco.png"
+            className="absolute top-[25%] left-[2%]  animate-float float-fast delay-0  responsive-logo"
+          />
+          <img
+            src="/assets/high plast.png"
+            className="absolute top-[5%] left-[18%]  animate-float float-fast delay-1 responsive-logo"
+          />
+          <img
+            src="/assets/subway.png"
+            className="absolute top-[5%] left-[33%] animate-float float-fast delay-2 responsive-logo"
+          />
+          <img
+            src="/assets/logiTrans.png"
+            className="absolute top-[5%] left-[51%]  animate-float float-fast delay-4 responsive-logo"
+          />
+          <img
+            src="/assets/mraqiya.png"
+            className="absolute top-[5%] left-[66%]  animate-float float-fast delay-0 responsive-logo"
+          />
+          <img
+            src="/assets/semah.png"
+            className="absolute top-[8%] left-[85%]  animate-float float-fast delay-4 responsive-logo"
+          />
+          <img
+            src="/assets/alrowad.png"
+            className="absolute top-[25%] left-[92%]  animate-float float-fast delay-2 responsive-logo"
+          />
 
-          <img src="/assets/bci.png" className="absolute top-[45%] left-[2%]  animate-float float-fast delay-1 responsive-logo" />
-          <img src="/assets/permeshwar.png" className="absolute top-[65%] left-[5%]  animate-float float-fast delay-0 responsive-logo" />
-          <img src="/assets/jameel.png" className="absolute top-[75%] left-[20%] animate-float float-fast delay-4 responsive-logo" />
-          <img src="/assets/ghim.png" className="absolute top-[75%] left-[35%]  animate-float float-fast delay-2 responsive-logo" />
-          <img src="/assets/rsn.png" className="absolute top-[75%] left-[50%]  animate-float float-fast delay-1 responsive-logo" />
-          <img src="/assets/formula arabia.png" className="absolute top-[75%] left-[65%] animate-float float-fast delay-0 responsive-logo" />
-          <img src="/assets/aquamaris.png" className="absolute top-[75%] left-[80%] animate-float float-fast delay-2 responsive-logo" />
-          <img src="/assets/AIBG.png" className="absolute top-[50%] left-[90%]  animate-float float-fast delay-4 responsive-logo" />
+          <img
+            src="/assets/bci.png"
+            className="absolute top-[45%] left-[2%]  animate-float float-fast delay-1 responsive-logo"
+          />
+          <img
+            src="/assets/permeshwar.png"
+            className="absolute top-[65%] left-[5%]  animate-float float-fast delay-0 responsive-logo"
+          />
+          <img
+            src="/assets/jameel.png"
+            className="absolute top-[75%] left-[20%] animate-float float-fast delay-4 responsive-logo"
+          />
+          <img
+            src="/assets/ghim.png"
+            className="absolute top-[75%] left-[35%]  animate-float float-fast delay-2 responsive-logo"
+          />
+          <img
+            src="/assets/rsn.png"
+            className="absolute top-[75%] left-[50%]  animate-float float-fast delay-1 responsive-logo"
+          />
+          <img
+            src="/assets/formula arabia.png"
+            className="absolute top-[75%] left-[65%] animate-float float-fast delay-0 responsive-logo"
+          />
+          <img
+            src="/assets/aquamaris.png"
+            className="absolute top-[75%] left-[80%] animate-float float-fast delay-2 responsive-logo"
+          />
+          <img
+            src="/assets/AIBG.png"
+            className="absolute top-[50%] left-[90%]  animate-float float-fast delay-4 responsive-logo"
+          />
         </div>
-     </div>
-
+      </div>
 
       <div className="absolute flex flex-col items-center gap-6 z-10">
         <p
@@ -72,7 +160,6 @@ export default function LandingBanner() {
             fontWeight: "400",
             lineHeight: "0.5",
             fontFamily: "'Bebas Neue', sans-serif",
-          
           }}
         >
           <span style={{ color: "#FF5900" }}>OPTIMIZE</span>

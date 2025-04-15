@@ -39,7 +39,7 @@ const Card6 = ({ item }) => {
         {/* Testimonial - Fixed width and proper mobile spacing */}
         <div className="w-full max-w-md sm:w-3/4 md:w-2/3 lg:w-64 xl:w-72 flex-shrink-0 mx-auto lg:mx-20 mt-6 sm:mt-8 lg:mt-0">
           <div
-            className="bg-white shadow-lg rounded-xl p-4 sm:p-5 lg:p-6 h-full"
+            className="bg-[f2f2f2] shadow-lg rounded-xl p-4 sm:p-5 lg:p-6 h-full"
             data-aos="fade-up"
             data-aos-duration="500"
           >
