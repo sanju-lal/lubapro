@@ -58,7 +58,7 @@ export default function IndustryInsights() {
         <div className="grid md:grid-cols-3 gap-6">
           {insights.map((item, index) => (
             <div key={index} className="bg-white rounded-md overflow-hidden ">
-              <div  data-aos="fade-up" data-aos-duration="500" data-aos-delay="100" className="relative h-[499px] ">
+              <div  data-aos="flip-left" data-aos-duration="500" data-aos-delay="500" className="relative h-[499px] ">
                 <Image
                   src={item.img}
                   alt="Insight"
