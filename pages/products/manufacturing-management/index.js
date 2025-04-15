@@ -1,6 +1,7 @@
 import React from "react";
 
 import Products1 from "../../../components/pages/landing/Products1";
+import WhyChooseLubapro from "../../../components/pages/landing/WhyChooseLubapro";
 
 const card2 = {
   titleBefore: "STREAMLINE YOUR",
@@ -16,6 +17,7 @@ const IndexPage = () => {
   return (
     <div>
       <Products1 item={card2} />
+      <WhyChooseLubapro/>
     </div>
   );
 };
