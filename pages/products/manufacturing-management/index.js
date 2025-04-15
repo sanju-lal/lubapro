@@ -45,10 +45,9 @@ const card = {
 const IndexPage = () => {
   return (
     <div>
-      <Products1 item={card2} />
-      <WhyChooseLubapro/>
       <Products1 item={card} />
       <Cards items={cardData} />
+      <WhyChooseLubapro />
     </div>
   );
 };
