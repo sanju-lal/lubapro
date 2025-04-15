@@ -42,7 +42,7 @@ const insights = [
 
 export default function IndustryInsights() {
   return (
-    <section className="py-12 px-4 bg-white">
+    <section className="py-12 px-4 bg-[#F2F2F2]">
       <div className=" mx-auto">
         <div data-aos="fade-up" data-aos-duration="500">
           <h2
@@ -57,7 +57,7 @@ export default function IndustryInsights() {
 
         <div className="grid md:grid-cols-3 gap-6">
           {insights.map((item, index) => (
-            <div key={index} className="bg-white rounded-md overflow-hidden ">
+            <div key={index} className="bg-[#F2F2F2] rounded-md overflow-hidden ">
               <div
                 data-aos="flip-left"
                 data-aos-duration="500"
