@@ -81,9 +81,9 @@ const IndexPage = () => {
     <div>
       <Products1 item={card} />
       <Cards items={cardData} />
-      <WhyChooseLubapro />
-      <ManufacturingSuite />
       <CardCarousel cardItems={cardDatas} />
+      <ManufacturingSuite />
+      <WhyChooseLubapro />
     </div>
   );
 };

@@ -22,7 +22,7 @@ export default function HeaderV3() {
           title: "Manufacturing management",
           linkTo: "products/manufacturing-management",
         },
-        { title: "Retail management", linkTo: "" },
+        { title: "Retail management", linkTo: "products/retail-management" },
         { title: "Transport management", linkTo: "" },
       ],
     },
