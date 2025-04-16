@@ -3,11 +3,8 @@ import React from "react";
 import Products1 from "../../../components/pages/landing/Products1";
 import WhyChooseLubapro from "../../../components/pages/landing/WhyChooseLubapro";
 import Cards from "../../../components/pages/landing/Cards";
-<<<<<<< HEAD
 import ManufacturingSuite from "../../../components/pages/landing/ManufacturingSuite";
-=======
 import CardCarousel from "../../../components/pages/landing/imageCard";
->>>>>>> dd84478a08fa477b1c83faa586708f88b5c8e4a7
 
 const cardData = [
   {
@@ -85,11 +82,8 @@ const IndexPage = () => {
       <Products1 item={card} />
       <Cards items={cardData} />
       <WhyChooseLubapro />
-<<<<<<< HEAD
-      <ManufacturingSuite/>
-=======
+      <ManufacturingSuite />
       <CardCarousel cardItems={cardDatas} />
->>>>>>> dd84478a08fa477b1c83faa586708f88b5c8e4a7
     </div>
   );
 };
