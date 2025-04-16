@@ -76,14 +76,40 @@ const cardDatas = [
     ],
   },
 ];
+const features = [
+  "Compliance & Traceability",
+  "Inventory",
+  "Costing & Analysis",
+  "Formulating & Packaging",
+  "Planning & Scheduling",
+  "QC & QA",
+  "Batch Production",
+  "Warehousing"
+];
+const testimonials = [
+  {
+    name: "Anjali Verma",
+    title: "Marketing Executive",
+    stars: 3,
+    text: "Good effort, but there's room for improvement in performance speed.",
+    img: "/assets/anjali.jpg", // Replace with actual image paths
+  },
+  {
+    name: "Deepak Raj",
+    title: "Operations Manager",
+    stars: 4,
+    text: "A strong product with minor glitches, but support is responsive.",
+    img: "/assets/deepak.jpg", // Replace with actual image paths
+  },
+];
 const IndexPage = () => {
   return (
     <div>
       <Products1 item={card} />
       <Cards items={cardData} />
       <CardCarousel cardItems={cardDatas} />
-      <ManufacturingSuite />
-      <WhyChooseLubapro />
+      <ManufacturingSuite features={features}/>
+      <WhyChooseLubapro testimonials={testimonials}/>
     </div>
   );
 };
