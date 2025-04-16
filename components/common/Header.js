@@ -34,7 +34,7 @@ export default function HeaderV3() {
         { title: "By Industry", linkTo: "" },
         { title: "Construction", linkTo: "" },
         { title: "Distribution", linkTo: "" },
-        { title: "Manufacturing", linkTo: "" },
+        { title: "Manufacturing", linkTo: "/solutions/manufacturing" },
         { title: "Professional Services", linkTo: "" },
         { title: "Retail", linkTo: "" },
         { title: "Field Service", linkTo: "" },
