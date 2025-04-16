@@ -26,7 +26,7 @@ const Products1 = ({ item, buttonText = "Learn More" }) => {
         <img
           src={item.image} // Make sure `item.image` contains the image URL
           alt="Product Visual"
-          className="w-[1312px] h-[611px] rounded-[27px] object-cover"
+          className="w-[100%] h-[611px] rounded-[27px] object-cover"
         />
       </div>
     </div>
