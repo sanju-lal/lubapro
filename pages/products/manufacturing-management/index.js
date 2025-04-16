@@ -3,6 +3,7 @@ import React from "react";
 import Products1 from "../../../components/pages/landing/Products1";
 import WhyChooseLubapro from "../../../components/pages/landing/WhyChooseLubapro";
 import Cards from "../../../components/pages/landing/Cards";
+import ManufacturingSuite from "../../../components/pages/landing/ManufacturingSuite";
 
 const cardData = [
   {
@@ -48,6 +49,7 @@ const IndexPage = () => {
       <Products1 item={card} />
       <Cards items={cardData} />
       <WhyChooseLubapro />
+      <ManufacturingSuite/>
     </div>
   );
 };
