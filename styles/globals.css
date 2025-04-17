@@ -76,3 +76,9 @@ body {
 .responsive-logo {
   width: clamp(40px, 10vw, 120px);
 }
+.responsive-logo-for-paramu {
+  width: clamp(40px, 6vw, 120px);
+}
+.responsive-logo-for-highplast {
+  width: clamp(40px, 5vw, 120px);
+}
