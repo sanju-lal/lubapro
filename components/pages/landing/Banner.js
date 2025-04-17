@@ -67,7 +67,7 @@ export default function LandingBanner() {
           />
           <img
             src="/assets/ghim.png"
-            className="absolute top-[75%] left-[35%]  animate-float float-fast delay-2 responsive-logo"
+            className="absolute top-[72%] left-[35%]  animate-float float-fast delay-2 responsive-logo"
           />
           <img
             src="/assets/rsn.png"
@@ -91,7 +91,7 @@ export default function LandingBanner() {
           />
           <img
             src="/assets/high plast.png"
-            className="absolute top-[5%] left-[18%]  animate-float float-fast delay-1 responsive-logo"
+            className="absolute top-[7%] left-[18%]  animate-float float-fast delay-1 responsive-logo-for-highplast"
           />
           <img
             src="/assets/subway.png"
@@ -111,7 +111,7 @@ export default function LandingBanner() {
           />
           <img
             src="/assets/alrowad.png"
-            className="absolute top-[25%] left-[92%]  animate-float float-fast delay-2 responsive-logo"
+            className="absolute top-[32%] left-[92%]  animate-float float-fast delay-2 responsive-logo"
           />
 
           <img
@@ -120,7 +120,7 @@ export default function LandingBanner() {
           />
           <img
             src="/assets/permeshwar.png"
-            className="absolute top-[65%] left-[5%]  animate-float float-fast delay-0 responsive-logo"
+            className="absolute top-[65%] left-[5%]  animate-float float-fast delay-0 responsive-logo-for-paramu"
           />
           <img
             src="/assets/jameel.png"
