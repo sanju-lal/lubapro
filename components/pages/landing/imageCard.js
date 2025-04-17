@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 
 const CardCarousel = ({ cardItems }) => {
   return (
-    <div className="w-full px-4 py-10">
+    <div className="w-full px-4 py-10" data-aos="fade-up" data-aos-duration="500">
       <Swiper
         modules={[Autoplay, Pagination]}
         slidesPerView={1}
@@ -39,7 +39,7 @@ const CardCarousel = ({ cardItems }) => {
                 </div>
 
                 {/* Text on the right with padding */}
-                <div className="w-full xl:w-2/3 p-6 xl:p-10 flex flex-col justify-center">
+                <div data-aos="fade-up" data-aos-duration="500" className="w-full xl:w-2/3 p-6 xl:p-10 flex flex-col justify-center">
                   <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black leading-snug">
                     {item?.titleBefore}{" "}
                     <span className="text-[#FF5900]">{item?.highlight}</span>{" "}

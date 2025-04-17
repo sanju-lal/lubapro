@@ -18,12 +18,9 @@ export default function HeaderV3() {
       linkTo: "/products",
       activeLink: "/products",
       subMenu: [
-        {
-          title: "Manufacturing management",
-          linkTo: "products/manufacturing-management",
-        },
+        { title: "Manufacturing management",linkTo: "products/manufacturing-management",},
         { title: "Retail management", linkTo: "products/retail-management" },
-        { title: "Transport management", linkTo: "" },
+        { title: "Transport management", linkTo: "products/transport-management" },
       ],
     },
     {
