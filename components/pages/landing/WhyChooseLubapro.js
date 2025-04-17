@@ -4,23 +4,8 @@ const bebas = Bebas_Neue({
   weight: "400",
 });
 
-export default function WhyChooseLubapro() {
-    const testimonials = [
-      {
-        name: "Anjali Verma",
-        title: "Marketing Executive",
-        stars: 3,
-        text: "Good effort, but there's room for improvement in performance speed.",
-        img: "/assets/anjali.jpg", // Replace with actual image paths
-      },
-      {
-        name: "Deepak Raj",
-        title: "Operations Manager",
-        stars: 4,
-        text: "A strong product with minor glitches, but support is responsive.",
-        img: "/assets/deepak.jpg", // Replace with actual image paths
-      },
-    ];
+export default function WhyChooseLubapro({testimonials=[]}) {
+    
   
     const getStars = (count) => {
       const full = "⭐".repeat(count);

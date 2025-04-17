@@ -1,6 +1,13 @@
 import React from 'react';
 
-const ManufacturingSuite = () => {
+const ManufacturingSuite = ({
+  title = "Lubapro",
+  highlight = "Smart",
+  subtitle = "Manufacturing Suite",
+  features = [] 
+}) => {
+
+  
   return (
     <div
       className="flex bg-white rounded-xl shadow-lg justify-between mx-auto my-10 
@@ -23,24 +30,18 @@ const ManufacturingSuite = () => {
               max-[1224px]:rounded-tr-xl
               max-[1224px]:rounded-br-none
             "
-
         />
       </div>
 
       {/* Left Content */}
       <div className="flex flex-col justify-center mx-15 p-10 order-1 max-[1224px]:order-2">
         <h2 className="text-3xl font-bold text-[40px] text-black mb-10">
-          Lubapro <span className="text-orange-500">Smart</span> Manufacturing Suite
+          {title} <span className="text-orange-500">{highlight}</span> {subtitle}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-10 mt-6 text-gray-600 text-lg text-[24px]">
-          <p>Compliance & Traceability</p>
-          <p>Inventory</p>
-          <p>Costing & Analysis</p>
-          <p>Formulating & Packaging</p>
-          <p>Planning & Scheduling</p>
-          <p>QC & QA</p>
-          <p>Batch Production</p>
-          <p>Warehousing</p>
+          {features.map((item, index) => (
+            <p key={index}>{item}</p>
+          ))}
         </div>
       </div>
     </div>

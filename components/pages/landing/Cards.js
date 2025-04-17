@@ -6,6 +6,12 @@ const highlightWords = [
   "MANUFACTURING",
   "AUTOMATED",
   "VISIBILITY",
+  "OMNICHANNEL",
+  "TIME",
+  "CLASS",
+  "FASTER",
+  "RETURNS",
+  "INTEGRATION"
 ];
 
 const Cards = ({ items = [] }) => {
