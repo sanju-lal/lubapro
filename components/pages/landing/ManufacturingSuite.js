@@ -4,19 +4,21 @@ const ManufacturingSuite = ({
   title = "Lubapro",
   highlight = "Smart",
   subtitle = "Manufacturing Suite",
-  features = [] 
+  features = [] ,
+  img = "/assets/manufacturingSuite.jpg"
 }) => {
 
   
   return (
-    <div
+    <div 
+      data-aos="fade-up" data-aos-duration="500"
       className="flex bg-white rounded-xl shadow-lg justify-between mx-auto my-10 
       max-[1224px]:flex-col"
     >
       {/* Right Image - Goes on top below 1224px */}
       <div className="overflow-hidden order-2 max-[1224px]:order-1">
         <img
-          src="/assets/manufacturingSuite.jpg"
+          src={img}
           alt="Pipes Industrial"
           className="
               w-[400px] 
@@ -34,7 +36,7 @@ const ManufacturingSuite = ({
       </div>
 
       {/* Left Content */}
-      <div className="flex flex-col justify-center mx-15 p-10 order-1 max-[1224px]:order-2">
+      <div data-aos="fade-up" data-aos-duration="500" className="flex flex-col justify-center mx-15 p-10 order-1 max-[1224px]:order-2">
         <h2 className="text-3xl font-bold text-[40px] text-black mb-10">
           {title} <span className="text-orange-500">{highlight}</span> {subtitle}
         </h2>

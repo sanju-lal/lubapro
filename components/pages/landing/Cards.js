@@ -1,4 +1,9 @@
 import React from "react";
+import { Bebas_Neue } from "next/font/google";
+
+const bebas = Bebas_Neue({
+  weight: "400",
+});
 
 const highlightWords = [
   "ANYTIME",
@@ -11,7 +16,13 @@ const highlightWords = [
   "CLASS",
   "FASTER",
   "RETURNS",
-  "INTEGRATION"
+  "INTEGRATION",
+  "UNIFIED",
+  "VIOLATION",
+  "BILLING",
+  "INTEGRATION",
+  "MAINTENANCE",
+  "VISIBILITY"
 ];
 
 const Cards = ({ items = [] }) => {
@@ -39,7 +50,7 @@ const Cards = ({ items = [] }) => {
     <div
       data-aos="fade-up"
       data-aos-duration="500"
-      className="px-4 py-10 md:py-20 bg-[#f2f2f2] flex flex-col items-center gap-10"
+      className={`${bebas.className} px-4 py-10 md:py-20 bg-[#f2f2f2] flex flex-col items-center gap-10`}
     >
       {rows.map((row, rowIndex) => (
         <div
@@ -55,7 +66,7 @@ const Cards = ({ items = [] }) => {
               key={index}
               className="bg-white shadow-md hover:shadow-lg transition-shadow rounded-[20px] p-6 md:p-8 w-full max-w-[643px] flex flex-col justify-between"
             >
-              <h3 className="text-2xl md:text-4xl font-extrabold text-[#161619] uppercase mb-2">
+              <h3 className="text-2xl md:text-6xl text-[#161619] uppercase mb-2">
                 {highlightText(card.title)}
               </h3>
               <p className="text-base md:text-xl text-[#838383] font-[Raleway]">

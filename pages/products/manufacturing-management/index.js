@@ -76,6 +76,7 @@ const cardDatas = [
     ],
   },
 ];
+
 const features = [
   "Compliance & Traceability",
   "Inventory",
@@ -86,29 +87,60 @@ const features = [
   "Batch Production",
   "Warehousing"
 ];
+const ManufacturingSuiteImg = "/assets/manufacturingSuite.jpg"
+
 const testimonials = [
   {
     name: "Anjali Verma",
     title: "Marketing Executive",
     stars: 3,
     text: "Good effort, but there's room for improvement in performance speed.",
-    img: "/assets/anjali.jpg", // Replace with actual image paths
+    img: "/assets/anjali.jpg",
   },
   {
     name: "Deepak Raj",
     title: "Operations Manager",
     stars: 4,
     text: "A strong product with minor glitches, but support is responsive.",
-    img: "/assets/deepak.jpg", // Replace with actual image paths
+    img: "/assets/deepak.jpg",
+  },
+  {
+    name: "Ritika Sharma",
+    title: "UI/UX Designer",
+    stars: 5,
+    text: "Absolutely love the interface! Smooth, clean, and user-friendly.",
+    img: "/assets/anjali.jpg",
+  },
+  {
+    name: "Karan Mehta",
+    title: "Software Engineer",
+    stars: 2,
+    text: "It works, but had too many bugs on my first run. Needs polishing.",
+    img: "/assets/deepak.jpg",
+  },
+  {
+    name: "Priya Nair",
+    title: "Product Manager",
+    stars: 4,
+    text: "Great value for the price. Would recommend with a few caveats.",
+    img: "/assets/anjali.jpg",
+  },
+  {
+    name: "Arjun Kapoor",
+    title: "Business Analyst",
+    stars: 5,
+    text: "Exceeded expectations. Quick, intuitive, and well-supported.",
+    img: "/assets/deepak.jpg",
   },
 ];
+
 const IndexPage = () => {
   return (
     <div>
       <Products1 item={card} />
       <Cards items={cardData} />
       <CardCarousel cardItems={cardDatas} />
-      <ManufacturingSuite features={features}/>
+      <ManufacturingSuite features={features} img={ManufacturingSuiteImg}/>
       <WhyChooseLubapro testimonials={testimonials}/>
     </div>
   );
